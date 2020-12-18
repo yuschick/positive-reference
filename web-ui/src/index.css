@@ -1,0 +1,67 @@
+/* I need to import fonts this way in create react app to solve flickering issue. */
+
+@font-face {
+  font-family: 'ageo';
+  src: url('./assets/fonts/ageo-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'ageo-semibold';
+  src: url('./assets/fonts/ageo-semibold-webfont.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'ageo-bold';
+  src: url('./assets/fonts/ageo-bold-webfont.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'ageo-extrabold';
+  src: url('./assets/fonts/ageo-extrabold-webfont.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'ageo-italic';
+  src: url('./assets/fonts/ageo-regularitalic-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: oblique;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'bradley-hand-itc-tt-bold';
+  src: url('./assets/fonts/bradleyhanditcttbold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+*|*:fullscreen:not(:root) {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  box-sizing: border-box !important;
+  object-fit: contain;
+  transform: none !important;
+}

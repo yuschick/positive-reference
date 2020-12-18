@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    padding: 4rem;
+    text-align: center;
+}
+
+img {
+    padding: 2rem;
+}
+
+a {
+    color: #58aa52;
+    text-decoration: none;
+}

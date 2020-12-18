@@ -1,0 +1,44 @@
+{
+  "name": "positive-store",
+  "version": "1.0.0",
+  "description": "The Positive Store is a central package with data and resolve logic to serve various frontend apps consistently.",
+  "source": "src/index.tsx",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.modern.module.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "microbundle --jsx React.createElement",
+    "dev": "microbundle watch --jsx React.createElement",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Yuschick",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/date-fns": "^2.6.0",
+    "@types/flat": "^5.0.1",
+    "@types/node": "^14.11.1",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "microbundle": "^0.12.3",
+    "prettier": "^2.1.2"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
+    "@sanity/client": "^2.0.1",
+    "@sanity/image-url": "^0.140.19",
+    "@types/lodash": "^4.14.161",
+    "axios": "^0.21.0",
+    "axios-cache-adapter": "^2.5.0",
+    "date-fns": "^2.16.1",
+    "easy-peasy": "^4.0.1",
+    "flat": "^5.0.2",
+    "i18next": "^19.8.3",
+    "lodash": "^4.17.20",
+    "react-i18next": "^11.7.3",
+    "typescript": "^4.0.3"
+  }
+}

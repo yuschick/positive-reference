@@ -1,0 +1,42 @@
+import { IAudienceModel } from './models/audience';
+import { IAuthModel } from './models/auth';
+import { IExerciseModel } from './models/exercise';
+import { IGoalModel } from './models/goal';
+import { IGroupModel } from './models/group';
+import { IInvitationModel } from './models/invitation';
+import { IMembershipModel } from './models/membership';
+import { IMomentModel } from './models/moment/model';
+import { ISanityModel } from './models/sanity/model';
+import { ISettingsModel } from './models/settings/model';
+import { IStrengthModel } from './models/strength/model';
+import { IUserModel } from './models/user/model';
+export declare const usePositiveActions: <Result>(mapActions: (actions: import("easy-peasy").ActionMapper<IStoreModel, "audiences" | "auth" | "exercises" | "goals" | "groups" | "invitations" | "memberships" | "moments" | "sanity" | "settings" | "strengths" | "user">) => Result) => Result;
+export declare const usePositiveState: <Result>(mapState: (state: import("easy-peasy").StateMapper<{
+    audiences: IAudienceModel;
+    auth: IAuthModel;
+    exercises: IExerciseModel;
+    goals: IGoalModel;
+    groups: IGroupModel;
+    invitations: IInvitationModel;
+    memberships: IMembershipModel;
+    moments: IMomentModel;
+    sanity: ISanityModel;
+    settings: ISettingsModel;
+    strengths: IStrengthModel;
+    user: IUserModel;
+}>) => Result, equalityFn?: ((prev: Result, next: Result) => boolean) | undefined) => Result;
+export interface IStoreModel {
+    audiences: IAudienceModel;
+    auth: IAuthModel;
+    exercises: IExerciseModel;
+    goals: IGoalModel;
+    groups: IGroupModel;
+    invitations: IInvitationModel;
+    memberships: IMembershipModel;
+    moments: IMomentModel;
+    sanity: ISanityModel;
+    settings: ISettingsModel;
+    strengths: IStrengthModel;
+    user: IUserModel;
+}
+export declare const storeModel: IStoreModel;
