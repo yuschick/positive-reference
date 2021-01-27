@@ -242,7 +242,7 @@ Thunk requests are built using `try...catch...finally` blocks. After a successfu
 
 ### Caching
 
-Requests not made to Sanity are made using Axios. To handle caching, the Axios Cache Adapter is used. To handle concurrent requests, an optimistic locking(_ish_) approach has been implemented to allow data stabiliy without offloading that work to the UI.
+Requests not made to Sanity are made using Axios. To handle caching, the Axios Cache Adapter is used. To handle 'concurrent' requests, an optimistic locking(_ish_) approach has been implemented to allow data stabiliy without offloading that work to the UI.
 
 Each store model contains a state value, `requestTimestamps`.
 
